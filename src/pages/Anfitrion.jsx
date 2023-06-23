@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Pregunta from '../components/Pregunta'
 import Respuestas from '../components/Respuestas'
+import Pasos from '../components/Pasos'
 import preguntas from '../preguntas.json'
 import { useAppValue } from '../context/appContext'
 import { actionTypes } from '../context/AppReducer'
@@ -16,7 +17,7 @@ function Anfitrion() {
     if(!localStorage.getItem('twitch_token')){
         navigate("/");
       }
-  })
+  }, [])
 
   const next_question = () => {
     if(index < preguntas.length - 1) {
@@ -34,6 +35,7 @@ function Anfitrion() {
 
   return (
     <div>
+      <Pasos index={index}/>
       <Pregunta Pregunta={preguntas[index].pregunta} / >
       <Respuestas respuestas={preguntas[index]} />
       <div className='mt-[100px] w-[300px] h-[70px] bg-gray-600 mx-auto flex items-center justify-center rounded-2xl cursor-pointer hover:bg-gray-400' onClick={handleNext}>
