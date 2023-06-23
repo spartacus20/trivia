@@ -1,0 +1,32 @@
+[
+    {
+    "pregunta": "¿En qué año se fundó Netflix?",
+     "A": 1997,
+     "B": 2001,
+     "C": 2009,
+     "D": 2015,
+     "respuesta": 1997,
+     "informacion": "res",
+     "Comunidad": false
+    },
+    {
+    "pregunta": "¿Cuál fue la serie más vista en Netflix en el 2019? ",
+     "A": "Breaking Bad",
+     "B": "Atypical",
+     "C": "Sex Education",
+     "D": "Stranger Things",
+     "respuesta": "Stranger Things",
+     "informacion": "res",
+     "Comunidad": false
+    },
+    {
+    "pregunta": "¿Cuál fue el primer largometraje de Pixar? ",
+     "A": "Toy Story",
+     "B": "Monsters inc",
+     "C": "Cars",
+     "D": "Up",
+     "respuesta": "Toy Story",
+     "informacion": "res",
+     "Comunidad": false
+    }
+   ]
